@@ -159,3 +159,90 @@ header {
     font-weight: 400;
     font-style: normal;
 }
+
+
+.carrossel {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px; /* Espaço interno do container */
+}
+
+.card {
+    flex: 0 0 300px; /* Largura fixa de 300px */
+    height: 400px; /* Altura fixa de 400px */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.carrossel-btn {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.carrossel-btn.prev {
+    position: absolute;
+    left: 10px;
+    
+}
+
+.carrossel-btn.next {
+    right: 10px;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-content{
+    margin: 80px;
+}
